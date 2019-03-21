@@ -1,0 +1,49 @@
+添加
+1 git init
+2 在目录建立文件
+3 查看文件名 git status
+4 添加到本地 git add 文件名
+5 git commit -m "first commit"
+6 git config --global user.email ""
+7 git config --global user.name ""
+8 git commit -m "first commit"
+9 git remote add origin 项目链接
+10 解除异常git remote rm origin
+11 git remote add origin 项目链接
+12 git push -u origin master
+删除
+1 本地rm 1.txt
+2 版本库git rm 1.txt
+   git commit -m "remove 1.txt"
+   误删还原（更新之前）git checkout -- test.txt
+3 git push -u origin master 将本次更改更新到github项目上去
+注:本地项目中的target文件夹不收操作影响,删除的只是远程仓库中的target, 可放心删除
+每次增加文件或删除文件，都要commit 然后直接 git push -u origin master，就可以同步到github上了
+
+本地修改同步远程仓库
+1 修改文件
+2 git add 1.txt 添加
+3 git commit -m ""提交到本地仓库
+4 git push -u(空) origin master 更新到远程仓库
+
+从远程仓库克隆
+git clone 地址
+ll 查看
+在github上添加密钥   
+创建一个文件夹
+git clone 地址
+cat 2.txt 原始内容
+vim 2.txt 在本地修改 
+关于 vim
+按 a, i 或 o 进入编辑模式
+按 ESC 进入操作模式
+在操作模式下，:wq 为写入退出，:q! 不保存退出  ）
+git add 2.txt
+git commit -m""
+git push origin -u master
+
+  
+
+
+
+
