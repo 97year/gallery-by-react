@@ -1,2 +1,2 @@
-gallery-by-react
+galleryByReact
 ==== 
